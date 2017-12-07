@@ -1790,12 +1790,9 @@ document.body.className += ' jsenabled';
 </div>
 <div id="InstructionsDiv" class="StdDiv">
 	<div id="Instructions"></div>
-<div id="yui_3_17_2_3_1512650129469_27"><button id="hackButton" class="FuncButton" onclick="hackPPLU()">Hackeame</button></div></div>
+<div id="yui_3_17_2_3_1512650129469_27"></div></div>
 <div id="MainDiv" class="StdDiv" style="height: 4212px;">
-<!-- These top buttons hidden; reveal if required -->
-<!--
-<button id="CheckButton1" class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckAnswers()">&#xa0;Comprueba tu respuesta&#xa0;</button>
- -->
+
 <div id="ClozeDiv">
 <form id="Cloze" method="post" action="" onsubmit="return false;" target="_top">
 <div class="ClozeBody">
@@ -1803,12 +1800,7 @@ document.body.className += ' jsenabled';
 </div>
 </form>
 </div>
-<button id="CheckButton2" class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckAnswers()">&nbsp;Comprueba tu respuesta&nbsp;</button>
-</div>
-<div class="Feedback" id="FeedbackDiv" style="display: none; left: 205px; width: 212px;">
-<div class="FeedbackText" id="FeedbackContent"></div>
-<button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;Correcto&nbsp;</button>
-</div>
+
 
 <form id="store" autocomplete="off" method="post" action="https://aulasvirtuales.educastur.es/mod/hotpot/submit.php" target="_top">
 <fieldset style="display:none">
@@ -1994,7 +1986,7 @@ I[49] = '\u0053\u0075\u006A\u0065\u0074\u006F\u0020\u006C\u00E9\u0078\u0069\u006
     function insertButton(){
 
         var div = document.createElement('div');
-        div.innerHTML = '<button id="hackButton" class="FuncButton" onclick="hackPPLU()">Hackeame</button>';
+        div.innerHTML = '<button id="hackButton" class="FuncButton" onclick="hackPPLU()">¡Ver Soluciones!</button>';
         document.getElementById('InstructionsDiv').appendChild(div);
     };
 
