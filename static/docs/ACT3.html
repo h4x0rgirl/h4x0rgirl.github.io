@@ -1,0 +1,1913 @@
+<html dir="ltr" lang="es" xml:lang="es" class="yui3-js-enabled"><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div><head>
+    <title>SOS - Actividad 3 - SE: valores y funciones</title>
+    <link rel="shortcut icon" href="https://aulasvirtuales.educastur.es/theme/image.php/campuseva/theme/1513074289/favicon">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="moodle, SOS - Actividad 3 - SE: valores y funciones">
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/aulasvirtuales.educastur.es","sesskey":"LfPWldu2hC","loadingicon":"https:\/\/aulasvirtuales.educastur.es\/theme\/image.php\/campuseva\/core\/1513074289\/i\/loading_small","themerev":"1513074289","slasharguments":1,"theme":"campuseva","jsrev":"1513074289","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''};if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else me.path=component+'/'+component+'.'+me.type};
+YUI_config = {"debug":false,"base":"https:\/\/aulasvirtuales.educastur.es\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/aulasvirtuales.educastur.es\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/aulasvirtuales.educastur.es\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/aulasvirtuales.educastur.es\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/aulasvirtuales.educastur.es\/theme\/yui_combo.php?m\/1513074289\/","combine":true,"comboBase":"https:\/\/aulasvirtuales.educastur.es\/theme\/yui_combo.php?","ext":false,"root":"m\/1513074289\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-formchangechecker":{"requires":["base","event-focus"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core_availability-form":{"requires":["base","node","event","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-calendar-eventmanager":{"requires":["base","node","event-mouseenter","overlay","moodle-calendar-eventmanager-skin"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3"]},"moodle-form-passwordunmask":{"requires":["node","base"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_dialogue-autocomplete":{"requires":["base","node","json-parse","autocomplete","autocomplete-filters","autocomplete-highlighters","event","event-key"]},"moodle-mod_dialogue-userpreference":{"requires":["base","node","json-parse","userpreference","userpreference-filters","userpreference-highlighters","event","event-key"]},"moodle-mod_dialogue-clickredirector":{"requires":["base","node","json-parse","clickredirector","clickredirector-filters","clickredirector-highlighters","event","event-key"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-util":{"requires":["node"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-mod_scheduler-limitchoices":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_navigation-navigation":{"requires":["base","io-base","node","event-synthetic","event-delegate","json-parse"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_estadisticasuso-graficas":{"requires":["base","node","charts","charts-legend"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_informes-eventos":{"requires":["base","node"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-theme_bootstrapbase-bootstrap":{"requires":["node","selector-css3"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-tinymce_mathslate-snippeteditor":{"requires":["json"]},"moodle-tinymce_mathslate-editor":{"requires":["dd-drag","dd-proxy","dd-drop","event","tabview","io-base","json","moodle-tinymce_mathslate-textool","moodle-tinymce_mathslate-mathjaxeditor"]},"moodle-tinymce_mathslate-dialogue":{"requires":["escape","moodle-local_mathslate-editor","moodle-tinymce_mathslate-editor"]},"moodle-tinymce_mathslate-mathjaxeditor":{"requires":["moodle-tinymce_mathslate-snippeteditor","dd-drop"]},"moodle-tinymce_mathslate-textool":{"requires":["dd-drag","dd-proxy","dd-drop","event","json"]}}},"gallery":{"name":"gallery","base":"https:\/\/aulasvirtuales.educastur.es\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/aulasvirtuales.educastur.es\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1513074289\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/aulasvirtuales.educastur.es\/lib\/javascript.php\/1513074289\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.mathjax.org\/mathjax\/2.3-latest\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+<link rel="stylesheet" type="text/css" href="https://aulasvirtuales.educastur.es/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css"><script type="text/javascript" src="https://aulasvirtuales.educastur.es/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js&amp;rollup/1513074289/mcore-min.js"></script><script charset="utf-8" id="yui_3_17_2_2_1513089204369_2" src="https://aulasvirtuales.educastur.es/theme/yui_combo.php?m/1513074289/theme_bootstrapbase/bootstrap/bootstrap-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_3_1513089204369_11" src="https://aulasvirtuales.educastur.es/theme/yui_combo.php?m/1513074289/core/event/event-min.js&amp;m/1513074289/filter_mathjaxloader/loader/loader-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_2_1513089204369_4" src="https://aulasvirtuales.educastur.es/theme/yui_combo.php?3.17.2/plugin/plugin-min.js&amp;3.17.2/event-mousewheel/event-mousewheel-min.js&amp;3.17.2/event-resize/event-resize-min.js&amp;3.17.2/event-hover/event-hover-min.js&amp;3.17.2/event-touch/event-touch-min.js&amp;3.17.2/event-move/event-move-min.js&amp;3.17.2/event-flick/event-flick-min.js&amp;3.17.2/event-valuechange/event-valuechange-min.js&amp;3.17.2/event-tap/event-tap-min.js" async=""></script><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_3_1513089204369_14" href="https://aulasvirtuales.educastur.es/theme/yui_combo.php?3.17.2/cssbutton/cssbutton-min.css"><script charset="utf-8" id="yui_3_17_2_3_1513089204369_15" src="https://aulasvirtuales.educastur.es/theme/yui_combo.php?m/1513074289/core/lockscroll/lockscroll-min.js" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://aulasvirtuales.educastur.es/theme/styles.php/campuseva/1513074289/all">
+<script type="text/javascript" src="https://aulasvirtuales.educastur.es/lib/javascript.php/1513074289/lib/javascript-static.js"></script>
+<script type="text/javascript" src="https://aulasvirtuales.educastur.es/lib/javascript.php/1513074289/mod/hotpot/attempt/hp/hp.js"></script>
+<script type="text/javascript" src="https://aulasvirtuales.educastur.es/lib/javascript.php/1513074289/mod/hotpot/attempt/hp/feedback.js"></script>
+<script type="text/javascript" src="https://aulasvirtuales.educastur.es/lib/javascript.php/1513074289/mod/hotpot/attempt/hp/6/jcloze/jcloze.js"></script>
+<script type="text/javascript" src="https://aulasvirtuales.educastur.es/theme/javascript.php/campuseva/1513074289/head"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+            </script>
+     
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<meta name="DC:Creator" content="Jose Gonzalez">
+<meta name="DC:Title" content="Se&amp;#x00F1;ala el valor del pronombre &quot;SE&quot; y su funci&amp;#x00F3;n sint&amp;#x00E1;ctica, cuando la tenga. El ejercicio es obligatorio.En esta ocasi&amp;#x00F3;n no hay l&amp;#x00ED;mite de tiempo para hacerlo, y dispones de tres intentos por cada error.La correcci&amp;#x00F3;n es autom&amp;#x00E1;tica, y la puntuaci&amp;#x00F3;n obtenida se te indicar&amp;#x00E1; al completar el &amp;#x00FA;ltimo enunciado.">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- Made with executable version 6.x (Moodle 2.8.3+ (Build: 20150212), HotPot no release found) -->
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+<style type="text/css">
+*html object.MediaPlayerNotForIE
+{
+	display: none;
+}
+#page-mod-hotpot-attempt p
+{
+	text-align: left;
+	margin: 0px;
+	font-size: 100%;
+}
+#page-mod-hotpot-attempt table,
+#page-mod-hotpot-attempt div,
+#page-mod-hotpot-attempt span,
+#page-mod-hotpot-attempt td
+{
+	font-size: 100%;
+	color: #000000;
+}
+#page-mod-hotpot-attempt div.Titles
+{
+	padding: 0.5em;;
+	text-align: center;
+	color: #000033;
+}
+#page-mod-hotpot-attempt button
+{
+	font-family: Geneva,Arial;
+	font-size: 100%;
+	display: inline;
+}
+#page-mod-hotpot-attempt .ExerciseTitle
+{
+	font-size: 140%;
+	color: #000033;
+}
+#page-mod-hotpot-attempt .ExerciseSubtitle
+{
+	font-size: 120%;
+	color: #000033;
+}
+#page-mod-hotpot-attempt div.StdDiv
+{
+	background-color: #bbbbee;
+	text-align: center;
+	font-size: 100%;
+	color: #000000;
+	padding: 0.5em;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #000000;
+	margin-bottom: 1px;
+}
+#page-mod-hotpot-attempt .RTLText
+{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial;
+}
+#page-mod-hotpot-attempt .CentredRTLText
+{
+	text-align: center;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial;
+}
+#page-mod-hotpot-attempt button p.RTLText
+{
+	text-align: center;
+}
+#page-mod-hotpot-attempt .RTLGapBox
+{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Times New Roman", Geneva,Arial;
+}
+#page-mod-hotpot-attempt .Guess
+{
+	font-weight: bold;
+}
+#page-mod-hotpot-attempt .CorrectAnswer
+{
+	font-weight: bold;
+}
+#page-mod-hotpot-attempt div#Timer
+{
+	padding: 0.25em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #000033;
+}
+#page-mod-hotpot-attempt span#TimerText
+{
+	padding: 0.25em;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+	display: none;
+	color: #000033;
+}
+#page-mod-hotpot-attempt span.Instructions
+{
+}
+#page-mod-hotpot-attempt div.ExerciseText
+{
+}
+#page-mod-hotpot-attempt .FeedbackText,
+#page-mod-hotpot-attempt .FeedbackText span.CorrectAnswer,
+#page-mod-hotpot-attempt .FeedbackText span.Guess,
+#page-mod-hotpot-attempt .FeedbackText span.Answer
+{
+	color: #000033;
+}
+#page-mod-hotpot-attempt .LeftItem
+{
+	font-size: 100%;
+	color: #000000;
+	text-align: left;
+}
+#page-mod-hotpot-attempt .RightItem
+{
+	font-weight: bold;
+	font-size: 100%;
+	color: #000000;
+}
+#page-mod-hotpot-attempt span.CorrectMark
+{
+}
+#page-mod-hotpot-attempt input,
+#page-mod-hotpot-attempt textarea
+{
+	font-family: Geneva,Arial;
+	font-size: 120%;
+}
+#page-mod-hotpot-attempt select
+{
+	font-size: 100%;
+}
+#page-mod-hotpot-attempt div.Feedback
+{
+	background-color: #ffffff;
+	left: 33%;
+	width: 34%;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: #000033;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+}
+#page-mod-hotpot-attempt div.ExerciseDiv
+{
+	color: #000000;
+}
+#page-mod-hotpot-attempt table.FlashcardTable
+{
+	background-color: transparent;
+	color: #000000;
+	border-color: #000000;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 90%;
+	position: relative;
+	text-align: center;
+	padding: 0px;
+}
+#page-mod-hotpot-attempt table.FlashcardTable tr
+{
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #bbbbee;
+}
+#page-mod-hotpot-attempt table.FlashcardTable td.Showing
+{
+	font-size: 140%;
+	text-align: center;
+	width: 50%;
+	display: table-cell;
+	padding: 2em;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	color: #000000;
+	background-color: #bbbbee;
+}
+#page-mod-hotpot-attempt table.FlashcardTable td.Hidden
+{
+	display: none;
+}
+#page-mod-hotpot-attempt div#SegmentDiv
+{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+#page-mod-hotpot-attempt a.ExSegment
+{
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+#page-mod-hotpot-attempt span.RemainingWordList
+{
+	font-style: italic;
+}
+#page-mod-hotpot-attempt div.DropLine
+{
+	position: absolute;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000033;
+	width: 80%;
+}
+#page-mod-hotpot-attempt .ClozeWordList
+{
+	text-align: center;
+	font-weight: bold;
+}
+#page-mod-hotpot-attempt div.ClozeBody
+{
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	line-height: 2.0
+}
+#page-mod-hotpot-attempt span.GapSpan
+{
+	font-weight: bold;
+}
+#page-mod-hotpot-attempt table.CrosswordGrid
+{
+	margin: auto auto 1em auto;
+	border-collapse: collapse;
+	padding: 0px;
+	background-color: #000000;
+}
+#page-mod-hotpot-attempt table.CrosswordGrid tbody tr td
+{
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 140%;
+	padding: 1px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	color: #000000;
+}
+#page-mod-hotpot-attempt table.CrosswordGrid span
+{
+	color: #000000;
+}
+#page-mod-hotpot-attempt table.CrosswordGrid td.BlankCell
+{
+	background-color: #000000;
+	color: #000000;
+}
+#page-mod-hotpot-attempt table.CrosswordGrid td.LetterOnlyCell
+{
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+#page-mod-hotpot-attempt table.CrosswordGrid td.NumLetterCell
+{
+	text-align: left;
+	vertical-align: top;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 1px;
+	font-weight: bold;
+}
+#page-mod-hotpot-attempt .NumLetterCellText
+{
+	cursor: pointer;
+	color: #000000;
+}
+#page-mod-hotpot-attempt .GridNum
+{
+	vertical-align: super;
+	font-size: 66%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+#page-mod-hotpot-attempt .GridNum:hover,
+#page-mod-hotpot-attempt .GridNum:visited
+{
+	color: #000000;
+}
+#page-mod-hotpot-attempt table#Clues
+{
+	margin: auto;
+	vertical-align: top;
+}
+#page-mod-hotpot-attempt table#Clues td
+{
+	vertical-align: top;
+}
+#page-mod-hotpot-attempt table.ClueList
+{
+	margin: auto;
+}
+#page-mod-hotpot-attempt td.ClueNum
+{
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+#page-mod-hotpot-attempt td.Clue
+{
+	text-align: left;
+}
+#page-mod-hotpot-attempt div#ClueEntry
+{
+	text-align: left;
+	margin-bottom: 1em;
+}
+#page-mod-hotpot-attempt div.Keypad
+{
+	text-align: center;
+	display: none;
+	margin-bottom: 0.5em;
+}
+#page-mod-hotpot-attempt div.Keypad button
+{
+	font-family: Geneva,Arial;
+	font-size: 120%;
+	background-color: #ffffff;
+	color: #000000;
+	width: 2em;
+}
+#page-mod-hotpot-attempt div.QuestionNavigation
+{
+	text-align: center;
+}
+#page-mod-hotpot-attempt .QNum
+{
+	margin: 0em 1em 0.5em 1em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+#page-mod-hotpot-attempt textarea
+{
+	font-family: Geneva,Arial;
+}
+#page-mod-hotpot-attempt .QuestionText
+{
+	text-align: left;
+	margin: 0px;
+	font-size: 100%;
+}
+#page-mod-hotpot-attempt .Answer
+{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+}
+#page-mod-hotpot-attempt .PartialAnswer
+{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+	color: #000033;
+}
+#page-mod-hotpot-attempt .Highlight
+{
+	color: #000000;
+	background-color: #ffff00;
+	font-weight: bold;
+	font-size: 120%;
+}
+#page-mod-hotpot-attempt ol.QuizQuestions
+{
+	text-align: left;
+	list-style-type: none;
+}
+#page-mod-hotpot-attempt ol.QuizQuestions li {
+	list-style-type: none;
+}
+#page-mod-hotpot-attempt li.QuizQuestion
+{
+	padding: 1em;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+#page-mod-hotpot-attempt ol.MCAnswers
+{
+	text-align: left;
+	list-style-type: upper-alpha;
+	padding: 1em;
+}
+#page-mod-hotpot-attempt ol.MCAnswers li {
+	list-style-type: upper-alpha;
+}
+#page-mod-hotpot-attempt ol.MCAnswers li
+{
+	margin-bottom: 1em;
+}
+#page-mod-hotpot-attempt ol.MSelAnswers
+{
+	text-align: left;
+	list-style-type: lower-alpha;
+	padding: 1em;
+}
+#page-mod-hotpot-attempt ol.MSelAnswers li {
+	list-style-type: lower-alpha;
+}
+#page-mod-hotpot-attempt div.ShortAnswer
+{
+	padding: 1em;
+}
+#page-mod-hotpot-attempt button.FuncButton
+{
+	text-align: center;
+	border-style: solid;
+	border-left-color: #ddddf6;
+	border-top-color: #ddddf6;
+	border-right-color: #5d5d77;
+	border-bottom-color: #5d5d77;
+	color: #000000;
+	background-color: #bbbbee;
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+	background-image: none;
+}
+#page-mod-hotpot-attempt button.FuncButtonUp
+{
+	color: #bbbbee;
+	text-align: center;
+	border-style: solid;
+	border-left-color: #ddddf6;
+	border-top-color: #ddddf6;
+	border-right-color: #5d5d77;
+	border-bottom-color: #5d5d77;
+	background-color: #000000;
+	color: #bbbbee;
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+	background-image: none;
+}
+#page-mod-hotpot-attempt button.FuncButtonDown
+{
+	color: #bbbbee;
+	text-align: center;
+	border-style: solid;
+	border-left-color: #5d5d77;
+	border-top-color: #5d5d77;
+	border-right-color: #ddddf6;
+	border-bottom-color: #ddddf6;
+	background-color: #000000;
+	color: #bbbbee;
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+	background-image: none;
+}
+#page-mod-hotpot-attempt div.NavButtonBar
+{
+	background-color: #000066;
+	text-align: center;
+	margin: 2px 0px 2px 0px;
+	clear: both;
+	font-size: 100%;
+}
+#page-mod-hotpot-attempt .NavButton
+{
+	border-style: solid;
+	border-left-color: #7f7fb2;
+	border-top-color: #7f7fb2;
+	border-right-color: #000033;
+	border-bottom-color: #000033;
+	background-color: #000066;
+	color: #000000;
+	border-width: 2px;
+	cursor: pointer;
+}
+#page-mod-hotpot-attempt .NavButtonUp
+{
+	border-style: solid;
+	border-left-color: #7f7fb2;
+	border-top-color: #7f7fb2;
+	border-right-color: #000033;
+	border-bottom-color: #000033;
+	color: #000066;
+	background-color: #000000;
+	border-width: 2px;
+	cursor: pointer;
+}
+#page-mod-hotpot-attempt .NavButtonDown
+{
+	border-style: solid;
+	border-left-color: #000033;
+	border-top-color: #000033;
+	border-right-color: #7f7fb2;
+	border-bottom-color: #7f7fb2;
+	color: #000066;
+	background-color: #000000;
+	border-width: 2px;
+	cursor: pointer;
+}
+#page-mod-hotpot-attempt a
+{
+	color: #0000ff;
+}
+#page-mod-hotpot-attempt a:visited
+{
+	color: #0000cc;
+}
+#page-mod-hotpot-attempt a:hover
+{
+	color: #0000ff;
+}
+#page-mod-hotpot-attempt div.CardStyle
+{
+	position: absolute;
+	font-family: Geneva,Arial;
+	font-size: 100%;
+	padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	color: #000000;
+	background-color: #bbbbee;
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+}
+#page-mod-hotpot-attempt .rtl
+{
+	text-align: right;
+	font-size: 140%;
+}
+</style>
+<script type="text/javascript">
+//<![CDATA[
+<!--
+function Client(){
+	this.min = false; if (document.getElementById){this.min = true;};
+	this.ua = navigator.userAgent;
+	this.name = navigator.appName;
+	this.ver = navigator.appVersion;
+	this.mac = (this.ver.indexOf('Mac') != -1);
+	this.win = (this.ver.indexOf('Windows') != -1);
+	this.gecko = (this.ua.indexOf('Gecko') > 1);
+	if (this.gecko){
+		this.geckoVer = parseInt(this.ua.substring(this.ua.indexOf('Gecko')+6, this.ua.length));
+		if (this.geckoVer > 10000000 && this.geckoVer < 20020000){this.min = false;}
+	}
+	this.firebird = (this.ua.indexOf('Firebird') > 1);
+	this.safari = (this.ua.indexOf('Safari') > 1);
+	if (this.safari){
+		this.gecko = false;
+	}
+	this.ie = (this.ua.indexOf('MSIE') > 0);
+	if (this.ie){
+		this.ieVer = parseFloat(this.ua.substring(this.ua.indexOf('MSIE')+5, this.ua.length));
+		if (this.ieVer < 5.5){this.min = false;}
+	}
+	this.opera = (this.ua.indexOf('Opera') > 0);
+	if (this.opera){
+		this.operaVer = parseFloat(this.ua.substring(this.ua.indexOf('Opera')+6, this.ua.length));
+		if (this.operaVer < 7.04){this.min = false;}
+	}
+	this.chrome = (this.ua.indexOf('Chrome') > 0);
+	if (this.chrome) {
+		this.geckoVer = 0;
+		this.safari = false;
+		this.min = true;
+	}
+	if (this.min == false){
+		alert('Your browser may not be able to handle this page.');
+	}
+	this.ie5mac = (this.ie&&this.mac&&(this.ieVer<6));
+}
+var C = new Client();
+function NavBtnOver(Btn){
+	if (Btn.className != 'NavButtonDown'){Btn.className = 'NavButtonUp';}
+}
+function NavBtnOut(Btn){
+	Btn.className = 'NavButton';
+}
+function NavBtnDown(Btn){
+	Btn.className = 'NavButtonDown';
+}
+function FuncBtnOver(Btn){
+	if (Btn.className != 'FuncButtonDown'){Btn.className = 'FuncButtonUp';}
+}
+function FuncBtnOut(Btn){
+	Btn.className = 'FuncButton';
+}
+function FuncBtnDown(Btn){
+	Btn.className = 'FuncButtonDown';
+}
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	} else {
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		} else {
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+var topZ = 1000;
+function ShowMessage(Feedback){
+	if (! document.getElementById('FeedbackDiv')) return false;
+	if (! document.getElementById('FeedbackContent')) return false;
+	if (! document.getElementById('FeedbackOKButton')) return false;
+	var Output = Feedback + '<br /><br />';
+	if (window.FEEDBACK) {
+		Output += '<a href="javascript:hpFeedback();">' + FEEDBACK[6] + '</a>';
+	}
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.display = 'block';
+	var t = getOffset(document.getElementById('page-mod-hotpot-attempt'), 'Top');
+	setOffset(FDiv, 'Top', Math.max(t, TopSettingWithScrollOffset(30)));
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	ShowElements(true, 'object', 'FeedbackContent');
+	if (C.chrome) {
+		ShowElements(false, 'embed');
+		ShowElements(true, 'embed', 'FeedbackContent');
+	}
+	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+}
+function ShowElements(Show, TagName, ContainerToReverse){
+	TopNode = document.getElementById(ContainerToReverse);
+	var Els;
+	if (TopNode != null) {
+		Els = TopNode.getElementsByTagName(TagName);
+	} else {
+		Els = document.getElementsByTagName(TagName);
+	}
+	for (var i=0; i<Els.length; i++){
+		if (TagName == "object") {
+			if (Show == true){
+				Els[i].style.visibility = 'visible';
+			} else {
+				Els[i].style.visibility = 'hidden';
+			}
+		} else {
+			if (C.ie) {
+				if (C.ieVer < 7) {
+					if (Show == true){
+						Els[i].style.visibility = 'visible';
+					} else {
+						Els[i].style.visibility = 'hidden';
+					}
+				}
+			}
+		}
+	}
+}
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+	if (C.chrome) {
+		ShowElements(true, 'embed');
+	}
+}
+function getStyleValue(obj, property_name, propertyName){
+	var value = 0;
+	if (obj && obj.style){
+		if (document.defaultView && document.defaultView.getComputedStyle){
+			value = document.defaultView.getComputedStyle(obj, null).getPropertyValue(property_name);
+		} else if (obj.currentStyle) {
+			value = obj.currentStyle[propertyName];
+		}
+		if (typeof(value)=='string'){
+			var r = new RegExp('([0-9.]*)([a-z]+)');
+			var m = value.match(r);
+			if (m){
+				switch (m[2]){
+					case 'em':
+						if (typeof(obj.EmInPx)=='undefined'){
+							var div = obj.parentNode.appendChild(document.createElement('div'));
+							div.style.margin = '0px';
+							div.style.padding = '0px';
+							div.style.border = 'none';
+							div.style.height = '1em';
+							obj.EmInPx = getOffset(div, 'Height');
+							obj.parentNode.removeChild(div);
+						}
+						value = parseFloat(m[1] * obj.EmInPx);
+						break;
+					case 'px':
+						value = parseFloat(m[1]);
+						break;
+					default:
+						value = 0;
+				}
+			} else {
+				value = 0 ;
+			}
+		} else {
+			value = 0;
+		}
+	}
+	return value;
+}
+function isStrict(){
+	return false;
+	if (typeof(window.cache_isStrict)=='undefined'){
+		if (document.compatMode) {
+			window.cache_isStrict = (document.compatMode=='CSS1Compat');
+		} else if (document.doctype){
+			var s = document.doctype.systemId || document.doctype.name;
+			window.cache_isStrict = (s && s.indexOf('strict.dtd') >= 0);
+		} else {
+			window.cache_isStrict = false;
+		}
+	}
+	return window.cache_isStrict;
+}
+function setOffset(obj, type, value){
+	if (! obj){
+		return false;
+	}
+	switch (type){
+		case 'Right':
+			return setOffset(obj, 'Width', value - getOffset(obj, 'Left'));
+		case 'Bottom':
+			return setOffset(obj, 'Height', value - getOffset(obj, 'Top'));
+	}
+	if (isStrict()){
+		var properties = new Array('margin', 'border', 'padding');
+		switch (type){
+			case 'Top':
+				var sides = new Array('Top');
+				break;
+			case 'Left':
+				var sides = new Array('Left');
+				break;
+			case 'Width':
+				var sides = new Array('Left', 'Right');
+				break;
+			case 'Height':
+				var sides = new Array('Top', 'Bottom');
+				break;
+			default:
+				return 0;
+		}
+		for (var p=0; p<properties.length; p++){
+			for (var s=0; s<sides.length; s++){
+				var propertyName = properties[p] + sides[s];
+				var property_name = properties[p] + '-' + sides[s].toLowerCase();
+				value -= getStyleValue(obj, property_name, propertyName);
+			}
+		}
+		value = Math.floor(value);
+	}
+	if (type=='Top' || type=='Left') {
+		value -= getOffset(obj.offsetParent, type);
+	}
+	if (obj.style) {
+		obj.style[type.toLowerCase()] = value + 'px';
+	}
+}
+function getOffset(obj, type){
+	if (! obj){
+		return 0;
+	}
+	switch (type){
+		case 'Width':
+		case 'Height':
+			return (obj['offset'+type]||0);
+		case 'Top':
+		case 'Left':
+			return (obj['offset'+type]||0) + getOffset(obj.offsetParent, type);
+		case 'Right':
+			return getOffset(obj, 'Left') + getOffset(obj, 'Width');
+		case 'Bottom':
+			return getOffset(obj, 'Top') + getOffset(obj, 'Height');
+		default:
+			return 0;
+	}
+}
+function PageDim(){
+	var obj = document.getElementById('page-mod-hotpot-attempt');
+	this.W = getOffset(obj, 'Width');
+	this.H = getOffset(obj, 'Height');
+	this.Top = getOffset(obj, 'Top');
+	this.Left = getOffset(obj, 'Left');
+}
+function getClassAttribute(className, attributeName){
+	if (! document.styleSheets){
+		return null;
+	}
+	var css = document.styleSheets;
+	var rules = (document.all ? 'rules' : 'cssRules');
+	var regexp = new RegExp('\\.'+className+'\\b');
+	try {
+		var i_max = css.length;
+	} catch(err) {
+		var i_max = 0;
+	}
+	for (var i=0; i<i_max; i++){
+		try {
+			var ii_max = css[i][rules].length;
+		} catch(err) {
+			var ii_max = 0;
+		}
+		for (var ii=0; ii<ii_max; ii++){
+			if (! css[i][rules][ii].selectorText){
+				continue;
+			}
+			if (css[i][rules][ii].selectorText.match(regexp)){
+				if (css[i][rules][ii].style[attributeName]){
+					return css[i][rules][ii].style[attributeName];
+				}
+			}
+		}
+	}
+	return null;
+}
+var pg = null;
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+function GetScrollTop(){
+	if (typeof(window.pageYOffset) == 'number'){
+		return window.pageYOffset;
+	} else {
+		if ((document.body)&&(document.body.scrollTop)){
+			return document.body.scrollTop;
+		} else {
+			if ((document.documentElement)&&(document.documentElement.scrollTop)){
+				return document.documentElement.scrollTop;
+			} else {
+				return 0;
+			}
+		}
+	}
+}
+function GetViewportSize(type){
+	if (eval('window.inner' + type)){
+		return eval('window.inner' + type);
+	}
+	if (document.documentElement){
+		if (eval('document.documentElement.client' + type)){
+			return eval('document.documentElement.client' + type);
+		}
+	}
+	if (document.body){
+		if (eval('document.body.client' + type)){
+			return eval('document.body.client' + type);
+		}
+	}
+	return 0;
+}
+function GetViewportHeight(){
+	return GetViewportSize('Height');
+}
+function GetViewportWidth(){
+	return GetViewportSize('Width');
+}
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T;
+}
+var InTextBox = false;
+function SuppressBackspace(evt) {
+	if (evt==null) {
+		evt = window.event;
+	}
+	if (evt.target) {
+		var evtTarget = evt.target;
+	} else if (evt.srcElement) {
+		var evtTarget = evt.srcElement;
+	} else {
+		return true;
+	}
+	if (evt.keyCode != 8) {
+		return true;
+	}
+	if (evtTarget.nodeType==3) {
+		evtTarget = evtTarget.parentNode;
+	}
+	if (evtTarget.tagName=='INPUT' || evtTarget.tagName=='TEXTAREA') {
+		return true;
+	}
+	if (evt.preventDefault) {
+		evt.preventDefault();
+	} else if (window.event) {
+		window.event.returnValue = false;
+		window.event.cancelBubble = true;
+	}
+	return false;
+}
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+	var j = Len;
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+function WriteToInstructions(Feedback) {
+	if (! document.getElementById('InstructionsDiv')) return false;
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+	StretchCanvasToCoverContent(true);
+}
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+function TrimString(InString){
+	if (typeof(InString)=='string'){
+		InString = InString.replace(new RegExp('^\\s+', 'g'), '');
+		InString = InString.replace(new RegExp('\\s+$', 'g'), '');
+		InString = InString.replace(new RegExp('\\s+', 'g'), ' ');
+	}
+	return InString;
+}
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+function Array_IndexOf(Input){
+	var Result = -1;
+	for (var i=0; i<this.length; i++){
+		if (this[i] == Input){
+			Result = i;
+		}
+	}
+	return Result;
+}
+Array.prototype.indexOf = Array_IndexOf;
+function RemoveBottomNavBarForIE(){
+	if (C.ie) {
+		if (document.getElementById('Reading')){
+			var obj = document.getElementById('BottomNavBar');
+			if (obj){
+				obj.parentNode.removeChild(obj);
+			}
+		}
+	}
+}
+var SubmissionTimeout = 0;
+var Detail = '';
+function ItemState(){
+	this.ClueGiven = false;
+	this.HintsAndChecks = 0;
+	this.MatchedAnswerLength = 0;
+	this.ItemScore = 0;
+	this.AnsweredCorrectly = false;
+	this.Guesses = new Array();
+	return this;
+}
+var Feedback = '';
+var Correct = '\u0043\u006F\u0072\u0072\u0065\u0063\u0074\u006F';
+var Incorrect = '\u0041\u006C\u0067\u0075\u006E\u0061\u0073\u0020\u0072\u0065\u0073\u0070\u0075\u0065\u0073\u0074\u0061\u0073\u0020\u0073\u006F\u006E\u0020\u0069\u006E\u0063\u006F\u0072\u0072\u0065\u0063\u0074\u0061\u0073\u002E\u0020\u0049\u006E\u0074\u00E9\u006E\u0074\u0061\u006C\u006F\u0020\u006F\u0074\u0072\u0061\u0020\u0076\u0065\u007A\u002E';
+var GiveHint = '\u0053\u0065\u0020\u0068\u0061\u0020\u0061\u00F1\u0061\u0064\u0069\u0064\u006F\u0020\u0075\u006E\u0061\u0020\u006C\u0065\u0074\u0072\u0061\u0020\u0063\u006F\u0072\u0072\u0065\u0063\u0074\u0061';
+var CaseSensitive = false;
+var YourScoreIs = '\u0054\u0075\u0020\u0070\u0075\u006E\u0074\u0075\u0061\u0063\u0069\u00F3\u006E\u0020\u0065\u0073\u003A\u0020';
+var Finished = false;
+var Locked = false;
+var Score = 0;
+var CurrentWord = 0;
+var Guesses = '';
+var TimeOver = false;
+I = new Array();
+I[0] = new Array();
+I[0][1] = new Array();
+I[0][1][0] = new Array();
+I[0][1][0][0] = '\u0076\u0061\u0072\u0069\u0061\u006E\u0074\u0065\u0020\u0064\u0065\u0020\u006C\u0065';
+I[0][1][1] = new Array();
+I[0][1][1][0] = '\u0076\u0061\u0072\u0069\u0061\u006E\u0074\u0065\u0020\u0064\u0065\u0020\u006C\u0065\u0020\u006F\u0020\u006C\u0065\u0073';
+I[0][2] = '';
+I[1] = new Array();
+I[1][1] = new Array();
+I[1][1][0] = new Array();
+I[1][1][0][0] = '\u0043\u0049';
+I[1][2] = '';
+I[2] = new Array();
+I[2][1] = new Array();
+I[2][1][0] = new Array();
+I[2][1][0][0] = '\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F';
+I[2][1][1] = new Array();
+I[2][1][1][0] = '\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F\u0020\u0075\u0020\u006F\u0070\u0074\u0061\u0074\u0069\u0076\u006F';
+I[2][1][2] = new Array();
+I[2][1][2][0] = '\u006F\u0070\u0074\u0061\u0074\u0069\u0076\u006F';
+I[2][2] = '';
+I[3] = new Array();
+I[3][1] = new Array();
+I[3][1][0] = new Array();
+I[3][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[3][2] = '';
+I[4] = new Array();
+I[4][1] = new Array();
+I[4][1][0] = new Array();
+I[4][1][0][0] = '\u0069\u006E\u0063\u0072\u0065\u006D\u0065\u006E\u0074\u006F\u0020\u006F\u0062\u006C\u0069\u0067\u0061\u0074\u006F\u0072\u0069\u006F';
+I[4][2] = '';
+I[5] = new Array();
+I[5][1] = new Array();
+I[5][1][0] = new Array();
+I[5][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[5][2] = '';
+I[6] = new Array();
+I[6][1] = new Array();
+I[6][1][0] = new Array();
+I[6][1][0][0] = '\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F';
+I[6][2] = '';
+I[7] = new Array();
+I[7][1] = new Array();
+I[7][1][0] = new Array();
+I[7][1][0][0] = '\u0043\u0049';
+I[7][2] = '';
+I[8] = new Array();
+I[8][1] = new Array();
+I[8][1][0] = new Array();
+I[8][1][0][0] = '\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F';
+I[8][1][1] = new Array();
+I[8][1][1][0] = '\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F\u0020\u0075\u0020\u006F\u0070\u0074\u0061\u0074\u0069\u0076\u006F';
+I[8][1][2] = new Array();
+I[8][1][2][0] = '\u006F\u0070\u0074\u0061\u0074\u0069\u0076\u006F';
+I[8][2] = '';
+I[9] = new Array();
+I[9][1] = new Array();
+I[9][1][0] = new Array();
+I[9][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[9][2] = '';
+I[10] = new Array();
+I[10][1] = new Array();
+I[10][1][0] = new Array();
+I[10][1][0][0] = '\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F\u002C\u0020\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F';
+I[10][1][1] = new Array();
+I[10][1][1][0] = '\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F\u002C\u0020\u006F\u0070\u0074\u0061\u0074\u0069\u0076\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F';
+I[10][1][2] = new Array();
+I[10][1][2][0] = '\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F\u002C\u0020\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F\u0020\u0075\u0020\u006F\u0070\u0074\u0061\u0074\u0069\u0076\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F';
+I[10][2] = '';
+I[11] = new Array();
+I[11][1] = new Array();
+I[11][1][0] = new Array();
+I[11][1][0][0] = '\u0043\u0044\u002C\u0020\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065\u002C\u0020\u0043\u0049';
+I[11][2] = '';
+I[12] = new Array();
+I[12][1] = new Array();
+I[12][1][0] = new Array();
+I[12][1][0][0] = '\u0070\u0061\u0073\u0069\u0076\u0061\u0020\u0072\u0065\u0066\u006C\u0065\u006A\u0061';
+I[12][2] = '';
+I[13] = new Array();
+I[13][1] = new Array();
+I[13][1][0] = new Array();
+I[13][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[13][2] = '';
+I[14] = new Array();
+I[14][1] = new Array();
+I[14][1][0] = new Array();
+I[14][1][0][0] = '\u0069\u006E\u0063\u0072\u0065\u006D\u0065\u006E\u0074\u006F\u0020\u006F\u0062\u006C\u0069\u0067\u0061\u0074\u006F\u0072\u0069\u006F\u002C\u0020\u0076\u0061\u0072\u0069\u0061\u006E\u0074\u0065\u0020\u0064\u0065\u0020\u006C\u0065';
+I[14][1][1] = new Array();
+I[14][1][1][0] = '\u0069\u006E\u0063\u0072\u0065\u006D\u0065\u006E\u0074\u006F\u0020\u006F\u0062\u006C\u0069\u0067\u0061\u0074\u006F\u0072\u0069\u006F\u002C\u0020\u0076\u0061\u0072\u0069\u0061\u006E\u0074\u0065\u0020\u0064\u0065\u0020\u006C\u0065\u0020\u006F\u0020\u006C\u0065\u0073';
+I[14][1][2] = new Array();
+I[14][1][2][0] = '\u0069\u006E\u0063\u0072\u0065\u006D\u0065\u006E\u0074\u006F\u002C\u0020\u0076\u0061\u0072\u0069\u0061\u006E\u0074\u0065\u0020\u0064\u0065\u0020\u006C\u0065';
+I[14][1][3] = new Array();
+I[14][1][3][0] = '\u0069\u006E\u0063\u0072\u0065\u006D\u0065\u006E\u0074\u006F\u0020\u006F\u0062\u006C\u0069\u0067\u0061\u0074\u006F\u0072\u0069\u006F\u002C\u0020\u0076\u0061\u0072\u0069\u0061\u006E\u0074\u0065\u0020\u0064\u0065\u0020\u006C\u0065\u0020\u006F\u0020\u006C\u0065\u0073';
+I[14][2] = '';
+I[15] = new Array();
+I[15][1] = new Array();
+I[15][1][0] = new Array();
+I[15][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065\u002C\u0020\u0043\u0049';
+I[15][2] = '';
+I[16] = new Array();
+I[16][1] = new Array();
+I[16][1][0] = new Array();
+I[16][1][0][0] = '\u0070\u0061\u0073\u0069\u0076\u0061\u0020\u0072\u0065\u0066\u006C\u0065\u006A\u0061';
+I[16][2] = '';
+I[17] = new Array();
+I[17][1] = new Array();
+I[17][1][0] = new Array();
+I[17][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[17][2] = '';
+I[18] = new Array();
+I[18][1] = new Array();
+I[18][1][0] = new Array();
+I[18][1][0][0] = '\u0072\u0065\u0063\u00ED\u0070\u0072\u006F\u0063\u006F';
+I[18][2] = '';
+I[19] = new Array();
+I[19][1] = new Array();
+I[19][1][0] = new Array();
+I[19][1][0][0] = '\u0043\u0049';
+I[19][2] = '';
+I[20] = new Array();
+I[20][1] = new Array();
+I[20][1][0] = new Array();
+I[20][1][0][0] = '\u0069\u006E\u0063\u0072\u0065\u006D\u0065\u006E\u0074\u006F\u0020\u006F\u0062\u006C\u0069\u0067\u0061\u0074\u006F\u0072\u0069\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F\u002C\u0020\u0076\u0061\u0072\u0069\u0061\u006E\u0074\u0065\u0020\u0064\u0065\u0020\u006C\u0065';
+I[20][1][1] = new Array();
+I[20][1][1][0] = '\u0069\u006E\u0063\u0072\u0065\u006D\u0065\u006E\u0074\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F\u002C\u0020\u0076\u0061\u0072\u0069\u0061\u006E\u0074\u0065\u0020\u0064\u0065\u0020\u006C\u0065\u0020\u006F\u0020\u006C\u0065\u0073';
+I[20][2] = '';
+I[21] = new Array();
+I[21][1] = new Array();
+I[21][1][0] = new Array();
+I[21][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065\u002C\u0020\u0043\u0049\u002C\u0020\u0043\u0049';
+I[21][2] = '';
+I[22] = new Array();
+I[22][1] = new Array();
+I[22][1][0] = new Array();
+I[22][1][0][0] = '\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F';
+I[22][2] = '';
+I[23] = new Array();
+I[23][1] = new Array();
+I[23][1][0] = new Array();
+I[23][1][0][0] = '\u0043\u0049\u002C\u0020\u0043\u0044\u002C\u0020\u0043\u0049';
+I[23][2] = '';
+I[24] = new Array();
+I[24][1] = new Array();
+I[24][1][0] = new Array();
+I[24][1][0][0] = '\u0070\u0061\u0073\u0069\u0076\u0061\u0020\u0072\u0065\u0066\u006C\u0065\u006A\u0061';
+I[24][2] = '';
+I[25] = new Array();
+I[25][1] = new Array();
+I[25][1][0] = new Array();
+I[25][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[25][2] = '';
+I[26] = new Array();
+I[26][1] = new Array();
+I[26][1][0] = new Array();
+I[26][1][0][0] = '\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F';
+I[26][2] = '';
+I[27] = new Array();
+I[27][1] = new Array();
+I[27][1][0] = new Array();
+I[27][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[27][2] = '';
+I[28] = new Array();
+I[28][1] = new Array();
+I[28][1][0] = new Array();
+I[28][1][0][0] = '\u0070\u0061\u0073\u0069\u0076\u0061\u0020\u0072\u0065\u0066\u006C\u0065\u006A\u0061\u002C\u0020\u0070\u0061\u0073\u0069\u0076\u0061\u0020\u0072\u0065\u0066\u006C\u0065\u006A\u0061';
+I[28][2] = '';
+I[29] = new Array();
+I[29][1] = new Array();
+I[29][1][0] = new Array();
+I[29][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065\u002C\u0020\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[29][2] = '';
+I[30] = new Array();
+I[30][1] = new Array();
+I[30][1][0] = new Array();
+I[30][1][0][0] = '\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F';
+I[30][2] = '';
+I[31] = new Array();
+I[31][1] = new Array();
+I[31][1][0] = new Array();
+I[31][1][0][0] = '\u0043\u0049';
+I[31][2] = '';
+I[32] = new Array();
+I[32][1] = new Array();
+I[32][1][0] = new Array();
+I[32][1][0][0] = '\u0069\u006D\u0070\u0065\u0072\u0073\u006F\u006E\u0061\u006C\u0069\u007A\u0061\u0064\u006F\u0072\u002C\u0020\u0069\u006D\u0070\u0065\u0072\u0073\u006F\u006E\u0061\u006C\u0069\u007A\u0061\u0064\u006F\u0072';
+I[32][1][1] = new Array();
+I[32][1][1][0] = '\u0069\u006D\u0070\u0065\u0072\u0073\u006F\u006E\u0061\u006C\u002C\u0020\u0069\u006D\u0070\u0065\u0072\u0073\u006F\u006E\u0061\u006C';
+I[32][2] = '';
+I[33] = new Array();
+I[33][1] = new Array();
+I[33][1][0] = new Array();
+I[33][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065\u002C\u0020\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[33][2] = '';
+I[34] = new Array();
+I[34][1] = new Array();
+I[34][1][0] = new Array();
+I[34][1][0][0] = '\u0070\u0061\u0073\u0069\u0076\u0061\u0020\u0072\u0065\u0066\u006C\u0065\u006A\u0061';
+I[34][2] = '';
+I[35] = new Array();
+I[35][1] = new Array();
+I[35][1][0] = new Array();
+I[35][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[35][2] = '';
+I[36] = new Array();
+I[36][1] = new Array();
+I[36][1][0] = new Array();
+I[36][1][0][0] = '\u0069\u006D\u0070\u0065\u0072\u0073\u006F\u006E\u0061\u006C\u0069\u007A\u0061\u0064\u006F\u0072';
+I[36][1][1] = new Array();
+I[36][1][1][0] = '\u0069\u006D\u0070\u0065\u0072\u0073\u006F\u006E\u0061\u006C';
+I[36][2] = '';
+I[37] = new Array();
+I[37][1] = new Array();
+I[37][1][0] = new Array();
+I[37][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[37][2] = '';
+I[38] = new Array();
+I[38][1] = new Array();
+I[38][1][0] = new Array();
+I[38][1][0][0] = '\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F\u002C\u0020\u0069\u006E\u0063\u0072\u0065\u006D\u0065\u006E\u0074\u006F\u0020\u006F\u0062\u006C\u0069\u0067\u0061\u0074\u006F\u0072\u0069\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F';
+I[38][1][1] = new Array();
+I[38][1][1][0] = '\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F\u002C\u0020\u0069\u006E\u0063\u0072\u0065\u006D\u0065\u006E\u0074\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F';
+I[38][2] = '';
+I[39] = new Array();
+I[39][1] = new Array();
+I[39][1][0] = new Array();
+I[39][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065\u002C\u0020\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065\u002C\u0020\u0043\u0049\u002C\u0020\u0043\u0049\u002C\u0020\u0043\u0049';
+I[39][2] = '';
+I[40] = new Array();
+I[40][1] = new Array();
+I[40][1][0] = new Array();
+I[40][1][0][0] = '\u0076\u0061\u0072\u0069\u0061\u006E\u0074\u0065\u0020\u0064\u0065\u0020\u006C\u0065';
+I[40][1][1] = new Array();
+I[40][1][1][0] = '\u0076\u0061\u0072\u0069\u0061\u006E\u0074\u0065\u0020\u0064\u0065\u0020\u006C\u0065\u0020\u006F\u0020\u006C\u0065\u0073';
+I[40][2] = '';
+I[41] = new Array();
+I[41][1] = new Array();
+I[41][1][0] = new Array();
+I[41][1][0][0] = '\u0043\u0049';
+I[41][2] = '';
+I[42] = new Array();
+I[42][1] = new Array();
+I[42][1][0] = new Array();
+I[42][1][0][0] = '\u0070\u0061\u0073\u0069\u0076\u0061\u0020\u0072\u0065\u0066\u006C\u0065\u006A\u0061';
+I[42][2] = '';
+I[43] = new Array();
+I[43][1] = new Array();
+I[43][1][0] = new Array();
+I[43][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[43][2] = '';
+I[44] = new Array();
+I[44][1] = new Array();
+I[44][1][0] = new Array();
+I[44][1][0][0] = '\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F';
+I[44][2] = '';
+I[45] = new Array();
+I[45][1] = new Array();
+I[45][1][0] = new Array();
+I[45][1][0][0] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[45][2] = '';
+State = new Array();
+function StartUp(){
+	if (window.StartedUp) {
+		return;
+	}
+	window.StartedUp = true;
+	RemoveBottomNavBarForIE();
+	if (document.getElementById('CharacterKeypad') != null){
+		document.getElementById('CharacterKeypad').style.display = 'block';
+	}
+	var i = 0;
+	State.length = 0;
+	for (i=0; i<I.length; i++){
+		State[i] = new ItemState();
+	}
+	ClearTextBoxes();
+	if (! window.pg){
+		window.pg = new PageDim();
+	}
+	var FDiv = document.getElementById('FeedbackDiv');
+	if (FDiv){
+		var w = getOffset(FDiv, 'Width') || FDiv.style.width || getClassAttribute(FDiv.className, 'width');
+		if (w){
+			if (typeof(w)=='string' && w.indexOf('%')>=0){
+				var percent = parseInt(w);
+			} else {
+				var percent = Math.floor(100 * parseInt(w) / pg.W);
+			}
+		} else if (window.FeedbackWidth && window.DivWidth){
+			var percent = Math.floor(100 * FeedbackWidth / DivWidth);
+		} else {
+			var percent = 34;
+		}
+		FDiv.style.display = 'block';
+		setOffset(FDiv, 'Left', pg.Left + Math.floor(pg.W * (50 - percent/2) / 100));
+		setOffset(FDiv, 'Width', Math.floor(pg.W * percent / 100));
+		FDiv.style.display = 'none';
+	}
+	window.HP_beforeunload = function() {
+		return '\u004C\u006F\u0073\u0020\u0072\u0065\u0073\u0075\u006C\u0074\u0061\u0064\u006F\u0073\u0020\u0068\u0061\u0073\u0074\u0061\u0020\u0065\u006C\u0020\u006D\u006F\u006D\u0065\u006E\u0074\u006F\u0020\u0073\u0065\u0020\u0067\u0075\u0061\u0072\u0064\u0061\u0072\u00E1\u006E\u0020\u0079\u0020\u0070\u006F\u0064\u0072\u00E1\u0020\u0076\u006F\u006C\u0076\u0065\u0072\u0020\u0061\u0020\u0072\u0065\u0061\u006C\u0069\u007A\u0061\u0072\u0020\u0022\u0053\u004F\u0053\u0020\u002D\u0020\u0041\u0063\u0074\u0069\u0076\u0069\u0064\u0061\u0064\u0020\u0033\u0020\u002D\u0020\u0053\u0045\u003A\u0020\u0076\u0061\u006C\u006F\u0072\u0065\u0073\u0020\u0079\u0020\u0066\u0075\u006E\u0063\u0069\u006F\u006E\u0065\u0073\u0022\u0020\u0070\u006F\u0073\u0074\u0065\u0072\u0069\u006F\u0072\u006D\u0065\u006E\u0074\u0065';
+	}
+	if (window.opera) {
+		opera.setOverrideHistoryNavigationMode('compatible');
+		history.navigationMode = 'compatible';
+	}
+	window.HP = new JCloze(0,0);
+	HP_add_listener(window, 'beforeunload', HP_send_results);
+	HP_add_listener(window, 'pagehide', HP_send_results);
+	HP_add_listener(window, 'unload', HP_send_results);
+	if (! window.hotpot_mediafilter_loader){
+		StretchCanvasToCoverContent();
+	}
+}
+function StretchCanvasToCoverContent(skipTimeout){
+	if (! skipTimeout){
+		if (navigator.userAgent.indexOf('Firefox/3')>=0){
+			var millisecs = 1000;
+		} else {
+			var millisecs = 500;
+		}
+		setTimeout('StretchCanvasToCoverContent(true)', millisecs);
+		return;
+	}
+	var canvas = document.getElementById('page-mod-hotpot-attempt');
+	if (canvas){
+		var ids = new Array('Reading','ReadingDiv','MainDiv');
+		var i_max = ids.length;
+		for (var i=i_max-1; i>=0; i--){
+			var obj = document.getElementById(ids[i]);
+			if (obj){
+				obj.style.height = '';
+			} else {
+				ids.splice(i, 1);
+				i_max--;
+			}
+		}
+		var b = 0;
+		for (var i=0; i<i_max; i++){
+			var obj = document.getElementById(ids[i]);
+			b = Math.max(b, getOffset(obj,'Bottom'));
+		}
+		if (window.Segments) {
+			var obj = document.getElementById('D'+(Segments.length-1));
+			if (obj) {
+				b = Math.max(b, getOffset(obj,'Bottom'));
+			}
+		}
+		if (b){
+			setOffset(canvas, 'Bottom', b + 21);
+			for (var i=0; i<i_max; i++){
+				var obj = document.getElementById(ids[i]);
+				setOffset(obj, 'Bottom', b);
+			}
+		}
+	}
+}
+function ShowClue(ItemNum){
+	if (!window.Locked) HP.onclickClue(ShowClue.arguments[0]);
+	if (Locked == true){return;}
+	State[ItemNum].ClueGiven = true;
+	ShowMessage(I[ItemNum][2]);
+}
+function SaveCurrentAnswers(){
+	var Ans = '';
+	for (var i=0; i<I.length; i++){
+		Ans = GetGapValue(i);
+		if ((Ans.length > 0)&&(Ans != State[i].Guesses[State[i].Guesses.length-1])){
+			State[i].Guesses[State[i].Guesses.length] = Ans;
+		}
+	}
+}
+function CheckAnswers(ForceQuizEvent){
+	HP.onclickCheck();
+	if (Locked == true){return;}
+	SaveCurrentAnswers();
+	var AllCorrect = true;
+	for (var i = 0; i<I.length; i++){
+		if (State[i].AnsweredCorrectly == false){
+			if (CheckAnswer(i, true) > -1){
+				var TotalChars = GetGapValue(i).length;
+				State[i].ItemScore = (TotalChars-State[i].HintsAndChecks)/TotalChars;
+				if (State[i].ClueGiven == true){State[i].ItemScore /= 2;}
+				if (State[i].ItemScore <0 ){State[i].ItemScore = 0;}
+				State[i].AnsweredCorrectly = true;
+				SetCorrectAnswer(i, GetGapValue(i));
+			} else {
+				State[i].HintsAndChecks++;
+				AllCorrect = false;
+			}
+		}
+	}
+	var TotalScore = 0;
+	for (i=0; i<State.length; i++){
+		TotalScore += State[i].ItemScore;
+	}
+	TotalScore = Math.floor((TotalScore * 100)/I.length);
+	Output = '';
+	if (AllCorrect == true){
+		Output = Correct + '<br />';
+	}
+	Output += YourScoreIs + ' ' + TotalScore + '%.<br />';
+	if (AllCorrect == false){
+		Output += Incorrect;
+	}
+	ShowMessage(Output);
+	setTimeout('WriteToInstructions(Output)', 50);
+	Score = TotalScore;
+	if (AllCorrect){
+		var QuizEvent = HP.EVENT_COMPLETED;
+	} else if (ForceQuizEvent){
+		var QuizEvent = ForceQuizEvent;
+	} else if (TimeOver){
+		var QuizEvent = HP.EVENT_TIMEDOUT;
+	} else {
+		var QuizEvent = HP.EVENT_CHECK;
+	}
+	if (HP.end_of_quiz(QuizEvent)) {
+		if (window.Interval) {
+			clearInterval(window.Interval);
+		}
+		TimeOver = true;
+		Locked = true;
+		Finished = true;
+	}
+	if (Finished || HP.sendallclicks){
+		if (QuizEvent==HP.EVENT_COMPLETED){
+			setTimeout('HP_send_results('+QuizEvent+')', SubmissionTimeout);
+		} else {
+			HP_send_results(QuizEvent);
+		}
+	}
+}
+function TrackFocus(BoxNumber){
+	CurrentWord = BoxNumber;
+	InTextBox = true;
+}
+function LeaveGap(){
+	InTextBox = false;
+}
+function CheckBeginning(Guess, Answer){
+	var OutString = '';
+	var i = 0;
+	var UpperGuess = '';
+	var UpperAnswer = '';
+	if (CaseSensitive == false) {
+		UpperGuess = Guess.toUpperCase();
+		UpperAnswer = Answer.toUpperCase();
+	} else {
+		UpperGuess = Guess;
+		UpperAnswer = Answer;
+	}
+	while (UpperGuess.charAt(i) == UpperAnswer.charAt(i)) {
+		OutString += Guess.charAt(i);
+		i++;
+	}
+	OutString += Answer.charAt(i);
+	return OutString;
+}
+function GetGapValue(GNum){
+	var RetVal = '';
+	if ((GNum<0)||(GNum>=I.length)){return RetVal;}
+	if (document.getElementById('Gap' + GNum) != null){
+		RetVal = document.getElementById('Gap' + GNum).value;
+		RetVal = TrimString(RetVal);
+	} else {
+		RetVal = State[GNum].Guesses[State[GNum].Guesses.length-1];
+	}
+	return RetVal;
+}
+function SetGapValue(GNum, Val){
+	if ((GNum<0)||(GNum>=I.length)){return;}
+	if (document.getElementById('Gap' + GNum) != null){
+		document.getElementById('Gap' + GNum).value = Val;
+		document.getElementById('Gap' + GNum).focus();
+	}
+}
+function SetCorrectAnswer(GNum, Val){
+	if ((GNum<0)||(GNum>=I.length)){return;}
+	if (document.getElementById('GapSpan' + GNum) != null){
+		document.getElementById('GapSpan' + GNum).innerHTML = Val;
+	}
+}
+function FindCurrent() {
+	var x = 0;
+	FoundCurrent = -1;
+	if (State[CurrentWord].AnsweredCorrectly == false){
+		if (CheckAnswer(CurrentWord, false) < 0){
+			return CurrentWord;
+		}
+	}
+	x=CurrentWord + 1;
+	while (x<I.length){
+		if (State[x].AnsweredCorrectly == false){
+			if (CheckAnswer(x, false) < 0){
+				return x;
+			}
+		}
+	x++;
+	}
+	x = 0;
+	while (x<CurrentWord){
+		if (State[x].AnsweredCorrectly == false){
+			if (CheckAnswer(x, false) < 0){
+				return x;
+			}
+		}
+	x++;
+	}
+	return FoundCurrent;
+}
+function CheckAnswer(GapNum, MarkAnswer){
+	var Guess = GetGapValue(GapNum);
+	var UpperGuess = '';
+	var UpperAnswer = '';
+	if (CaseSensitive == false){
+		UpperGuess = Guess.toUpperCase();
+	} else {
+		UpperGuess = Guess;
+	}
+	var Match = -1;
+	for (var i = 0; i<I[GapNum][1].length; i++){
+		if (CaseSensitive == false){
+			UpperAnswer = I[GapNum][1][i][0].toUpperCase();
+		} else {
+			UpperAnswer = I[GapNum][1][i][0];
+		}
+		if (TrimString(UpperGuess) == UpperAnswer){
+			Match = i;
+			if (MarkAnswer == true){
+				State[GapNum].AnsweredCorrectly = true;
+			}
+		}
+	}
+	return Match;
+}
+function GetHint(GapNum){
+	Guess = GetGapValue(GapNum);
+	if (CheckAnswer(GapNum, false) > -1){return ''}
+	RightBits = new Array();
+	for (var i=0; i<I[GapNum][1].length; i++){
+		RightBits[i] = CheckBeginning(Guess, I[GapNum][1][i][0]);
+	}
+	var RightOne = FindLongest(RightBits);
+	var Result = I[GapNum][1][RightOne][0].substring(0,RightBits[RightOne].length);
+	if (Result.charAt(Result.length-1) == ' '){
+		Result = I[GapNum][1][RightOne][0].substring(0,RightBits[RightOne].length+1);
+	}
+	return Result;
+}
+function ShowHint(){
+	var q = (window.Locked ? -1 : FindCurrent());
+	if (q>=0 && GetHint(q)) HP.onclickHint(q);
+	if (! document.getElementById('FeedbackDiv')) return;
+	if (document.getElementById('FeedbackDiv').style.display == 'block'){return;}
+	if (Locked == true){return;}
+	var CurrGap = FindCurrent();
+	if (CurrGap < 0){return;}
+	var HintString = GetHint(CurrGap);
+	if (HintString.length > 0){
+		SetGapValue(CurrGap, HintString);
+		State[CurrGap].HintsAndChecks += 1;
+	}
+	ShowMessage(GiveHint);
+}
+function TypeChars(Chars){
+	var CurrGap = FindCurrent();
+	if (CurrGap < 0){
+		return;
+	}
+	var obj = document.getElementById('Gap' + CurrGap);
+	if (obj==null || obj.style.display=='none') {
+		return;
+	}
+	obj.focus();
+	if (typeof(obj.selectionStart)=='number') {
+		var startPos = obj.selectionStart;
+		var endPos = obj.selectionEnd;
+		obj.value = obj.value.substring(0, startPos) + Chars + obj.value.substring(endPos);
+		var newPos = startPos + Chars.length;
+		obj.setSelectionRange(newPos, newPos);
+	} else if (document.selection) {
+		var rng = document.selection.createRange();
+		rng.text = Chars;
+		rng = null;
+	} else {
+		obj.value += Chars;
+	}
+}
+//-->
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+FEEDBACK = new Array();
+FEEDBACK[0] = 'http://campus.educastur.es/mod/book/view.php?id=3200&chapterid=101';
+FEEDBACK[6] = 'Evíe un mensaje a su instructor';
+FEEDBACK[7] = 'Retroalimentación';
+FEEDBACK[8] = 'Profesor';
+FEEDBACK[9] = 'Cuerpo del mensaje';
+FEEDBACK[10] = 'Cerrar esta ventana';
+//]]>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["MMLorHTML.js", "Safe.js"],
+    jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+    extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
+    TeX: {
+        extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+    },
+    menuSettings: {
+        zoom: "Double-Click",
+        mpContext: true,
+        mpMouse: true
+    },
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script></head>
+
+<body id="page-mod-hotpot-attempt" class="format-topics  path-mod path-mod-hotpot safari dir-ltr lang-es yui-skin-sam yui3-skin-sam aulasvirtuales-educastur-es pagelayout-embedded course-100 context-4067 cmid-2852 category-102  campuseva aulas_virtuales jsenabled" style="height: 2466px;">
+    <div class="borde_superior"></div>
+<div class="skiplinks"><a class="skip" href="#maincontent" target="_top">Saltar a contenido principal</a></div>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+<div id="page">
+    <div id="page-content" class="clearfix">
+        <div role="main"><span id="maincontent"></span>
+
+<div class="Titles">
+	<h2 class="ExerciseTitle">SOS - Actividad 3 - SE: valores y funciones</h2>
+</div>
+<div id="InstructionsDiv" class="StdDiv">
+	<div id="Instructions">Escribe en los espacios en blanco las palabras adecuadas.</div>
+</div>
+<div id="MainDiv" class="StdDiv" style="height: 2273px;">
+<!-- These top buttons hidden; reveal if required -->
+<!--
+<button id="CheckButton1" class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckAnswers()">&#xa0;Comprueba tu respuesta&#xa0;</button>
+ -->
+<div id="ClozeDiv">
+<form id="Cloze" method="post" action="" onsubmit="return false;" target="_top">
+<div class="ClozeBody">
+<br>PROTOCOLO DE RESPUESTAS: <br>Para que la corrección automatizada sea eficaz hay que utilizar los siguientes términos y expresiones:<br><br>variante de le  //  variante de les  //  reflexivo  // recíproco  //  incremento obligatorio  //  enfático  // impersonalizador  //  pasiva refleja  // CD  //  CI  //  no tiene<br><br>En los casos en que haya más de un "se", debes indicar cada valor separado por comas, y tras cada coma un hueco (por ejemplo: pasiva refleja, reflexivo, impersonalizador), y lo mismo en la columna de funciones (por ejemplo: CI, no tiene, CD). Es importante observar bien estas instrucciones para evitar errores en la corrección automatizada, incluso -si en una oración que tenga varios- se repite un mismo valor o una función (por ejemplo: impersonalizador, reflexivo, reflexivo / no tiene, CI, CI). Repasa bien este protocolo antes de enviar la tarea.<table border="1" cellpadding="2" cellspacing="2"><tbody><tr><td>ENUNCIADOS ORACIONALES</td><td>VALOR DE "SE"</td><td>FUNCIÓN SINTÁCTICA</td></tr><tr><td>1.	  Se lo hizo saber al doctor Urbino Daza por si le era posible adelantar el entierro</td><td><span class="GapSpan" id="GapSpan0"><input type="text" id="Gap0" onfocus="TrackFocus(0)" onblur="LeaveGap()" class="GapBox" size="20"></span></td><td><span class="GapSpan" id="GapSpan1"><input type="text" id="Gap1" onfocus="TrackFocus(1)" onblur="LeaveGap()" class="GapBox" size="6"></span></td></tr><tr><td>2.	  Lo invitó a un café mientras pasaba el desorden y él se lo tomó encantado</td><td><span class="GapSpan" id="GapSpan2"><input type="text" id="Gap2" onfocus="TrackFocus(2)" onblur="LeaveGap()" class="GapBox" size="19"></span></td><td><span class="GapSpan" id="GapSpan3"><input type="text" id="Gap3" onfocus="TrackFocus(3)" onblur="LeaveGap()" class="GapBox" size="8"></span></td></tr><tr><td>3.	  Y de pronto se le ocurrió que era una de esas artistas descarriadas de los barcos fruteros de Nueva Orleans</td><td><span class="GapSpan" id="GapSpan4"><input type="text" id="Gap4" onfocus="TrackFocus(4)" onblur="LeaveGap()" class="GapBox" size="22"></span></td><td><span class="GapSpan" id="GapSpan5"><input type="text" id="Gap5" onfocus="TrackFocus(5)" onblur="LeaveGap()" class="GapBox" size="8"></span></td></tr><tr><td>4.	  Se secó las manos y la cara con una toalla</td><td><span class="GapSpan" id="GapSpan6"><input type="text" id="Gap6" onfocus="TrackFocus(6)" onblur="LeaveGap()" class="GapBox" size="9"></span></td><td><span class="GapSpan" id="GapSpan7"><input type="text" id="Gap7" onfocus="TrackFocus(7)" onblur="LeaveGap()" class="GapBox" size="6"></span></td></tr><tr><td>5.	  La ética –dijo– se imagina que los médicos somos de palo</td><td><span class="GapSpan" id="GapSpan8"><input type="text" id="Gap8" onfocus="TrackFocus(8)" onblur="LeaveGap()" class="GapBox" size="19"></span></td><td><span class="GapSpan" id="GapSpan9"><input type="text" id="Gap9" onfocus="TrackFocus(9)" onblur="LeaveGap()" class="GapBox" size="8"></span></td></tr><tr><td>6.	  Urbino sabía que su esposa se respetaba tanto a sí misma como para no permitir siquiera un intento de infidencia anónima por teléfono y no podía imaginarse a nadie tan atrevido como para hacérsela en nombre propio</td><td><span class="GapSpan" id="GapSpan10"><input type="text" id="Gap10" onfocus="TrackFocus(10)" onblur="LeaveGap()" class="GapBox" size="41"></span></td><td><span class="GapSpan" id="GapSpan11"><input type="text" id="Gap11" onfocus="TrackFocus(11)" onblur="LeaveGap()" class="GapBox" size="16"></span></td></tr><tr><td>7.	  En aquellos salones umbríos se repetían sin compasión los mismos ejercicios de piano</td><td><span class="GapSpan" id="GapSpan12"><input type="text" id="Gap12" onfocus="TrackFocus(12)" onblur="LeaveGap()" class="GapBox" size="14"></span></td><td><span class="GapSpan" id="GapSpan13"><input type="text" id="Gap13" onfocus="TrackFocus(13)" onblur="LeaveGap()" class="GapBox" size="8"></span></td></tr><tr><td>8.	  Le arrancaba los botones de la ropa para que él tuviera que demorarse en su casa mientras se los volvía a coser</td><td><span class="GapSpan" id="GapSpan14"><input type="text" id="Gap14" onfocus="TrackFocus(14)" onblur="LeaveGap()" class="GapBox" size="44"></span></td><td><span class="GapSpan" id="GapSpan15"><input type="text" id="Gap15" onfocus="TrackFocus(15)" onblur="LeaveGap()" class="GapBox" size="12"></span></td></tr><tr><td>9.	  Ordenó que salieran de la bahía y esperaran en la ciénaga de las Mercedes hasta las dos de la tarde mientras se preparaban los trámites para que el buque quedara en cuarentena</td><td><span class="GapSpan" id="GapSpan16"><input type="text" id="Gap16" onfocus="TrackFocus(16)" onblur="LeaveGap()" class="GapBox" size="14"></span></td><td><span class="GapSpan" id="GapSpan17"><input type="text" id="Gap17" onfocus="TrackFocus(17)" onblur="LeaveGap()" class="GapBox" size="8"></span></td></tr><tr><td>10.	   Por error, a veces se dirigían la palabra sin recibir respuesta</td><td><span class="GapSpan" id="GapSpan18"><input type="text" id="Gap18" onfocus="TrackFocus(18)" onblur="LeaveGap()" class="GapBox" size="9"></span></td><td><span class="GapSpan" id="GapSpan19"><input type="text" id="Gap19" onfocus="TrackFocus(19)" onblur="LeaveGap()" class="GapBox" size="6"></span></td></tr><tr><td>11.	  Si su novio supiera las cosas que se le ocurren a Irene, no lo aguantaría, porque la futura esposa de un oficial del Ejército no puede darse esos lujos ¿cuántas veces se lo habré dicho?</td><td><span class="GapSpan" id="GapSpan20"><input type="text" id="Gap20" onfocus="TrackFocus(20)" onblur="LeaveGap()" class="GapBox" size="49"></span></td><td><span class="GapSpan" id="GapSpan21"><input type="text" id="Gap21" onfocus="TrackFocus(21)" onblur="LeaveGap()" class="GapBox" size="16"></span></td></tr><tr><td>12.	   No tengo ánimo para andar detrás de mi hija vigilando que se ponga una crema en la cara y se vista como Dios manda para no espantar al novio. Ya está en edad de cuidarse sola</td><td><span class="GapSpan" id="GapSpan22"><input type="text" id="Gap22" onfocus="TrackFocus(22)" onblur="LeaveGap()" class="GapBox" size="31"></span></td><td><span class="GapSpan" id="GapSpan23"><input type="text" id="Gap23" onfocus="TrackFocus(23)" onblur="LeaveGap()" class="GapBox" size="10"></span></td></tr><tr><td>13.	   Además Irene no tendrá larga vida, eso se le nota en los ojos distraídos</td><td><span class="GapSpan" id="GapSpan24"><input type="text" id="Gap24" onfocus="TrackFocus(24)" onblur="LeaveGap()" class="GapBox" size="14"></span></td><td><span class="GapSpan" id="GapSpan25"><input type="text" id="Gap25" onfocus="TrackFocus(25)" onblur="LeaveGap()" class="GapBox" size="8"></span></td></tr><tr><td>14.	   Cúrala, mi Dios, antes de que se la lleven al manicomio</td><td><span class="GapSpan" id="GapSpan26"><input type="text" id="Gap26" onfocus="TrackFocus(26)" onblur="LeaveGap()" class="GapBox" size="8"></span></td><td><span class="GapSpan" id="GapSpan27"><input type="text" id="Gap27" onfocus="TrackFocus(27)" onblur="LeaveGap()" class="GapBox" size="8"></span></td></tr><tr><td>15.    Incluso la cama se compartía y la ropa se guardaba en grandes canastos de mimbre donde cada mañana la familia retiraba lo necesario</td><td><span class="GapSpan" id="GapSpan28"><input type="text" id="Gap28" onfocus="TrackFocus(28)" onblur="LeaveGap()" class="GapBox" size="30"></span></td><td><span class="GapSpan" id="GapSpan29"><input type="text" id="Gap29" onfocus="TrackFocus(29)" onblur="LeaveGap()" class="GapBox" size="18"></span></td></tr><tr><td>16.	   Apenas conoció la muerte de sue hermano, Manuel se hizo un salvoconducto y, tras viajar durante días por una España calcinada, llegó a Colliure</td><td><span class="GapSpan" id="GapSpan30"><input type="text" id="Gap30" onfocus="TrackFocus(30)" onblur="LeaveGap()" class="GapBox" size="9"></span></td><td><span class="GapSpan" id="GapSpan31"><input type="text" id="Gap31" onfocus="TrackFocus(31)" onblur="LeaveGap()" class="GapBox" size="6"></span></td></tr><tr><td>17.	   Como es una creencia, y sobre las creencias no se discute, sobre el nacionalismo no se puede discutir</td><td><span class="GapSpan" id="GapSpan32"><input type="text" id="Gap32" onfocus="TrackFocus(32)" onblur="LeaveGap()" class="GapBox" size="34"></span></td><td><span class="GapSpan" id="GapSpan33"><input type="text" id="Gap33" onfocus="TrackFocus(33)" onblur="LeaveGap()" class="GapBox" size="18"></span></td></tr><tr><td>18.	    La mitad de las cosas que se atribuyen a Líster es pura leyenda</td><td><span class="GapSpan" id="GapSpan34"><input type="text" id="Gap34" onfocus="TrackFocus(34)" onblur="LeaveGap()" class="GapBox" size="14"></span></td><td><span class="GapSpan" id="GapSpan35"><input type="text" id="Gap35" onfocus="TrackFocus(35)" onblur="LeaveGap()" class="GapBox" size="8"></span></td></tr><tr><td>19.	    En otros testimonios de la época se habla también de él</td><td><span class="GapSpan" id="GapSpan36"><input type="text" id="Gap36" onfocus="TrackFocus(36)" onblur="LeaveGap()" class="GapBox" size="16"></span></td><td><span class="GapSpan" id="GapSpan37"><input type="text" id="Gap37" onfocus="TrackFocus(37)" onblur="LeaveGap()" class="GapBox" size="8"></span></td></tr><tr><td>20.	    Ahora resulta cada vez más difícil cuidar a las muchachas, una vuelve la cara y se van al río, las mando al pueblo a comprar azúcar y se pierden por horas, me preocupo de vestirlas con decencia, pero ellas se arremangan las faldas, se abren los botones de la blusa y se colorean la cara</td><td><span class="GapSpan" id="GapSpan38"><input type="text" id="Gap38" onfocus="TrackFocus(38)" onblur="LeaveGap()" class="GapBox" size="65"></span></td><td><span class="GapSpan" id="GapSpan39"><input type="text" id="Gap39" onfocus="TrackFocus(39)" onblur="LeaveGap()" class="GapBox" size="30"></span></td></tr><tr><td>21.	    Casi exactamente en los mismos términos en que yo se la había oído contar a Ferlosio</td><td><span class="GapSpan" id="GapSpan40"><input type="text" id="Gap40" onfocus="TrackFocus(40)" onblur="LeaveGap()" class="GapBox" size="20"></span></td><td><span class="GapSpan" id="GapSpan41"><input type="text" id="Gap41" onfocus="TrackFocus(41)" onblur="LeaveGap()" class="GapBox" size="6"></span></td></tr><tr><td>22.	    Si no recuerdo mal, en la reunión se discutió la posibilidad de organizar una última resistencia al enemigo en Cataluña</td><td><span class="GapSpan" id="GapSpan42"><input type="text" id="Gap42" onfocus="TrackFocus(42)" onblur="LeaveGap()" class="GapBox" size="14"></span></td><td><span class="GapSpan" id="GapSpan43"><input type="text" id="Gap43" onfocus="TrackFocus(43)" onblur="LeaveGap()" class="GapBox" size="8"></span></td></tr><tr><td>23.	    Cállese, abuela, que pueden oírla los vecinos</td><td><span class="GapSpan" id="GapSpan44"><input type="text" id="Gap44" onfocus="TrackFocus(44)" onblur="LeaveGap()" class="GapBox" size="8"></span></td><td><span class="GapSpan" id="GapSpan45"><input type="text" id="Gap45" onfocus="TrackFocus(45)" onblur="LeaveGap()" class="GapBox" size="8"></span></td></tr></tbody></table>
+</div>
+</form>
+</div>
+<button id="CheckButton2" class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckAnswers()">&nbsp;Comprueba tu respuesta&nbsp;</button>
+</div>
+<div class="Feedback" id="FeedbackDiv" style="display: none; left: 424px; width: 437px;">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;Correcto&nbsp;</button>
+</div>
+
+<form id="store" autocomplete="off" method="post" action="https://aulasvirtuales.educastur.es/mod/hotpot/submit.php" target="_top">
+<fieldset style="display:none">
+<input type="hidden" name="id" value="9223">
+<input type="hidden" name="mark" value="0">
+<input type="hidden" name="detail" value="0">
+<input type="hidden" name="status" value="0">
+<input type="hidden" name="starttime" value="0">
+<input type="hidden" name="endtime" value="0">
+<input type="hidden" name="redirect" value="0">
+</fieldset>
+<div>
+
+</div>
+</form>
+
+
+<script type="text/javascript">
+//<![CDATA[
+function HP_setup_input_and_textarea() {
+	if (window.allow_paste_input || window.enable_paste_input || true) {
+		var disablepaste = false;
+	} else {
+		var disablepaste = true;
+	}
+	var obj = document.getElementsByTagName('input');
+	if (obj) {
+		var i_max = obj.length;
+		for (var i=0; i<i_max; i++) {
+			if (obj[i].type=='text') {
+				if (disablepaste) {
+					HP_add_listener(obj[i], 'drop', HP_disable_event);
+					HP_add_listener(obj[i], 'paste', HP_disable_event);
+				}
+				HP_add_listener(obj[i], 'focus', HP_send_results);
+			}
+		}
+	}
+	var obj = document.getElementsByTagName('textarea');
+	if (obj) {
+		var i_max = obj.length;
+		for (var i=0; i<i_max; i++) {
+			if (disablepaste) {
+				HP_add_listener(obj[i], 'drop', HP_disable_event);
+				HP_add_listener(obj[i], 'paste', HP_disable_event);
+			}
+			HP_add_listener(obj[i], 'focus', HP_send_results);
+		}
+	}
+	obj = null;
+}
+HP_add_listener(window, 'load', HP_setup_input_and_textarea);
+if (window.SuppressBackspace) {
+	HP_add_listener(window, 'keydown', SuppressBackspace);
+}
+HP_add_listener(window, 'load', 'StartUp()');
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+	var obj = document.getElementsByTagName('a');
+	if (obj) {
+		var i_max = obj.length;
+		for (var i=0; i<i_max; i++) {
+			if (obj[i].href && ! obj[i].target) {
+				obj[i].target = '_top';
+			}
+		}
+		var obj = null;
+	}
+	var obj = document.getElementsByTagName('form');
+	if (obj) {
+		var i_max = obj.length;
+		for (var i=0; i<i_max; i++) {
+			if (obj[i].action && ! obj[i].target) {
+				obj[i].target = '_top';
+			}
+		}
+		var obj = null;
+	}
+//]]>
+</script>
+</div>    </div>
+</div>
+<script type="text/javascript" src="https://aulasvirtuales.educastur.es/theme/javascript.php/campuseva/1513074289/footer"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u00daltima modificaci\u00f3n","name":"Nombre","error":"Error","info":"Informaci\u00f3n","morehelp":"M\u00e1s ayuda","loadinghelp":"Cargando...","cancel":"Cancelar","yes":"S\u00ed","confirm":"Confirmar","no":"No","areyousure":"\u00bfEst\u00e0 seguro?","closebuttontitle":"Cerrar","unknownerror":"Error desconocido"},"repository":{"type":"Tipo","size":"Tama\u00f1o","invalidjson":"Cadena JSON no v\u00e1lida","nofilesattached":"No se han adjuntado archivos","filepicker":"Selector de archivos","logout":"Salir","nofilesavailable":"No hay archivos disponibles","norepositoriesavailable":"Lo sentimos, ninguno de sus repositorios actuales puede devolver archivos en el formato solicitado.","fileexistsdialogheader":"El archivo existe","fileexistsdialog_editor":"Un archivo con el mismo nombre ya se ha adjuntado al texto que est\u00e1 editando.","fileexistsdialog_filemanager":"Un archivo con ese nombre ya ha sido adjuntado","renameto":"Cambiar el nombre a \"{$a}\"","referencesexist":"Existen {$a} archivos de alias\/atajos que emplean este archivo como su or\u00edgen","select":"Seleccionar"},"block":{"addtodock":"Minimizar en la barra lateral","undockitem":"Desacoplar este \u00edtem","dockblock":"Acoplar bloque {$a}","undockblock":"Desacoplar bloque {$a}","undockall":"Desacoplar todo","hidedockpanel":"Esconder el panel desacoplado","hidepanel":"Esconder panel"},"langconfig":{"thisdirectionvertical":"btt"},"admin":{"confirmation":"Confirmaci\u00f3n"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+YUI().use('node', function(Y) {
+M.util.load_flowplayer();
+setTimeout("fix_column_widths()", 20);
+Y.use("moodle-core-dock-loader",function() {M.core.dock.loader.initLoader();
+});
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"MMLorHTML.js\", \"Safe.js\"],\n    jax: [\"input\/TeX\",\"input\/MathML\",\"output\/HTML-CSS\",\"output\/NativeMML\"],\n    extensions: [\"tex2jax.js\",\"mml2jax.js\",\"MathMenu.js\",\"MathZoom.js\"],\n    TeX: {\n        extensions: [\"AMSmath.js\",\"AMSsymbols.js\",\"noErrors.js\",\"noUndefined.js\"]\n    },\n    menuSettings: {\n        zoom: \"Double-Click\",\n        mpContext: true,\n        mpMouse: true\n    },\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"es"});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+ M.util.js_pending('random5a2fe8b3b964d2'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5a2fe8b3b964d2'); });
+
+});
+//]]>
+</script>
+<script type="text/javascript">
+
+var I = []; //Data for exercise 3
+I[0] = '\u0076\u0061\u0072\u0069\u0061\u006E\u0074\u0065\u0020\u0064\u0065\u0020\u006C\u0065';
+I[1] = '\u0043\u0049';
+I[2] = '\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F';
+I[3] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[4] = '\u0069\u006E\u0063\u0072\u0065\u006D\u0065\u006E\u0074\u006F\u0020\u006F\u0062\u006C\u0069\u0067\u0061\u0074\u006F\u0072\u0069\u006F';
+I[5] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[6] = '\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F';
+I[7] = '\u0043\u0049';
+I[8] = '\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F';
+I[9] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[10] = '\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F\u002C\u0020\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F';
+I[11] = '\u0043\u0044\u002C\u0020\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065\u002C\u0020\u0043\u0049';
+I[12] = '\u0070\u0061\u0073\u0069\u0076\u0061\u0020\u0072\u0065\u0066\u006C\u0065\u006A\u0061';
+I[13] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[14] = '\u0069\u006E\u0063\u0072\u0065\u006D\u0065\u006E\u0074\u006F\u0020\u006F\u0062\u006C\u0069\u0067\u0061\u0074\u006F\u0072\u0069\u006F\u002C\u0020\u0076\u0061\u0072\u0069\u0061\u006E\u0074\u0065\u0020\u0064\u0065\u0020\u006C\u0065';
+I[15] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065\u002C\u0020\u0043\u0049';
+I[16] = '\u0070\u0061\u0073\u0069\u0076\u0061\u0020\u0072\u0065\u0066\u006C\u0065\u006A\u0061';
+I[17] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[18] = '\u0072\u0065\u0063\u00ED\u0070\u0072\u006F\u0063\u006F';
+I[19] = '\u0043\u0049';
+I[20] = '\u0069\u006E\u0063\u0072\u0065\u006D\u0065\u006E\u0074\u006F\u0020\u006F\u0062\u006C\u0069\u0067\u0061\u0074\u006F\u0072\u0069\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F\u002C\u0020\u0076\u0061\u0072\u0069\u0061\u006E\u0074\u0065\u0020\u0064\u0065\u0020\u006C\u0065';
+I[21] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065\u002C\u0020\u0043\u0049\u002C\u0020\u0043\u0049';
+I[22] = '\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F';
+I[23] = '\u0043\u0049\u002C\u0020\u0043\u0044\u002C\u0020\u0043\u0049';
+I[24] = '\u0070\u0061\u0073\u0069\u0076\u0061\u0020\u0072\u0065\u0066\u006C\u0065\u006A\u0061';
+I[25] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065'
+I[26] = '\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F';
+I[27] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[28] = '\u0070\u0061\u0073\u0069\u0076\u0061\u0020\u0072\u0065\u0066\u006C\u0065\u006A\u0061\u002C\u0020\u0070\u0061\u0073\u0069\u0076\u0061\u0020\u0072\u0065\u0066\u006C\u0065\u006A\u0061';
+I[29] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065\u002C\u0020\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[30] = '\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F';
+I[31] = '\u0043\u0049';
+I[32] = '\u0069\u006D\u0070\u0065\u0072\u0073\u006F\u006E\u0061\u006C\u0069\u007A\u0061\u0064\u006F\u0072\u002C\u0020\u0069\u006D\u0070\u0065\u0072\u0073\u006F\u006E\u0061\u006C\u0069\u007A\u0061\u0064\u006F\u0072';
+I[33] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065\u002C\u0020\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[34] = '\u0070\u0061\u0073\u0069\u0076\u0061\u0020\u0072\u0065\u0066\u006C\u0065\u006A\u0061';
+I[35] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[36] = '\u0069\u006D\u0070\u0065\u0072\u0073\u006F\u006E\u0061\u006C\u0069\u007A\u0061\u0064\u006F\u0072';
+I[37] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[38] = '\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F\u002C\u0020\u0069\u006E\u0063\u0072\u0065\u006D\u0065\u006E\u0074\u006F\u0020\u006F\u0062\u006C\u0069\u0067\u0061\u0074\u006F\u0072\u0069\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F\u002C\u0020\u0072\u0065\u0066\u006C\u0065\u0078\u0069\u0076\u006F';
+I[39] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065\u002C\u0020\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065\u002C\u0020\u0043\u0049\u002C\u0020\u0043\u0049\u002C\u0020\u0043\u0049';
+I[40] = '\u0076\u0061\u0072\u0069\u0061\u006E\u0074\u0065\u0020\u0064\u0065\u0020\u006C\u0065';
+I[41] = '\u0043\u0049';
+I[42] = '\u0070\u0061\u0073\u0069\u0076\u0061\u0020\u0072\u0065\u0066\u006C\u0065\u006A\u0061';
+I[43] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+I[44] = '\u0065\u006E\u0066\u00E1\u0074\u0069\u0063\u006F';
+I[45] = '\u006E\u006F\u0020\u0074\u0069\u0065\u006E\u0065';
+
+
+
+
+    function getindex (stringid) {
+        var stringid = String(stringid);
+        if (stringid.length == 4){
+            var elementindex = stringid[3];
+        } else if(stringid.length == 5 ){
+            var elementindex = stringid[3] + stringid[4];
+        }
+        return elementindex;
+    };
+
+    function hackPPLU (){
+        var inputs = document.getElementsByTagName("input");
+        for (var i = 0; i < inputs.length; i++) {
+            var correspondence = getindex(inputs[i].id);
+            var intro_value = I[correspondence];
+            document.getElementById(inputs[i].id).value = String(intro_value);
+        }
+    };
+
+    function insertButton(){
+
+        var div = document.createElement('div');
+        div.innerHTML = '<button id="hackButton" class="FuncButton" onclick="hackPPLU()">Ver Soluciones</button>';
+        document.getElementById('InstructionsDiv').appendChild(div);
+    };
+
+    insertButton();
+</script>
+
+</body></html>
